@@ -1,0 +1,130 @@
+/* WebContent/css/style.css */
+* {
+	box-sizing: border-box;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial;
+}
+
+body {
+	margin: 0;
+	background: #f4f7fb;
+	color: #222
+}
+
+.header {
+	background: #072f5f;
+	color: white;
+	padding: 18px 28px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between
+}
+
+.header a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 16px
+}
+
+.container {
+	max-width: 1100px;
+	margin: 28px auto;
+	padding: 0 18px
+}
+
+.card {
+	background: white;
+	border-radius: 10px;
+	padding: 18px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+	margin-bottom: 18px
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 18px
+}
+
+.room-card {
+	border: 1px solid #e6eef6;
+	padding: 14px;
+	border-radius: 8px
+}
+
+.btn {
+	display: inline-block;
+	padding: 8px 14px;
+	border-radius: 8px;
+	background: #0b6fb6;
+	color: white;
+	text-decoration: none;
+	border: none;
+	cursor: pointer
+}
+
+.form-row {
+	margin-bottom: 12px
+}
+
+.input, select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 6px;
+	border: 1px solid #d6e4f2
+}
+
+.small {
+	font-size: 13px;
+	color: #666
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse
+}
+
+.table th, .table td {
+	padding: 10px;
+	border-bottom: 1px solid #f0f4f8;
+	text-align: left
+}
+
+.nav {
+	display: flex;
+	gap: 12px;
+	align-items: center
+}
+
+.footer {
+	padding: 18px;
+	text-align: center;
+	color: #777
+}
+
+.notice {
+	background: #fff8e1;
+	border-left: 4px solid #ffd95a;
+	padding: 10px;
+	margin-bottom: 12px
+}
+
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.error {
+	color: #b00020;
+	background: #ffebee;
+	padding: 8px;
+	border-radius: 6px
+}
+
+.success {
+	color: #155724;
+	background: #e6f4ea;
+	padding: 8px;
+	border-radius: 6px
+}
