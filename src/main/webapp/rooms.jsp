@@ -10,7 +10,7 @@ String checkOut = request.getParameter("check_out");
 <head>
 <meta charset="utf-8">
 <title>Rooms</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
 	<div class="header">

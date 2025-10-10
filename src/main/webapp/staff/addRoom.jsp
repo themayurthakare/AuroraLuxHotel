@@ -39,7 +39,7 @@ if ("POST".equalsIgnoreCase(request.getMethod())) {
 <head>
 <meta charset="utf-8">
 <title>Add Room</title>
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style1.css">
 </head>
 <body>
 	<div class="header">

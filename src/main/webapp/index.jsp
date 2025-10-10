@@ -6,11 +6,12 @@
 <head>
 <meta charset="utf-8">
 <title>Hotel Booking - Home</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style1.css">
 </head>
-<body>
-	<div class="header">
-		<div>
+<body class="home-bg">
+	<div class="overlay"></div>
+	<div class="header glass">
+		<div class="logo">
 			<strong>AuroraLux Hotel</strong>
 		</div>
 		<div class="nav">
@@ -18,12 +19,13 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="card">
-			<h2>Welcome to My Hotel</h2>
-			<p class="small">Comfortable rooms. Easy booking. Friendly staff.</p>
+		<div class="card glass center-card">
+			<h2>Welcome to AuroraLux Hotel</h2>
+			<p class="small">Luxury & comfort blended together for an
+				unforgettable stay.</p>
 		</div>
 
-		<div class="card">
+		<div class="card glass">
 			<h3>Featured Rooms</h3>
 			<div class="grid">
 				<%
@@ -33,12 +35,13 @@
 					ResultSet rs = pst.executeQuery();
 					while (rs.next()) {
 				%>
-				<div class="room-card">
+				<div class="room-card glass">
 					<h4>
 						Room
 						<%=rs.getString("room_number")%>
 						—
-						<%=rs.getString("room_type")%></h4>
+						<%=rs.getString("room_type")%>
+					</h4>
 					<p class="small">
 						Price: ₹<%=rs.getString("price")%>
 						/ night
@@ -55,11 +58,10 @@
 				%>
 			</div>
 		</div>
-
-		
 	</div>
 </body>
 </html>
+
 <%
 if (conn != null)
 	try {

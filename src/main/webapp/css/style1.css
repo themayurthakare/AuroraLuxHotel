@@ -1,0 +1,212 @@
+/* WebContent/css/style.css */
+
+/* Base Reset */
+* {
+	box-sizing: border-box;
+	font-family: "Poppins", Inter, system-ui, -apple-system, 'Segoe UI',
+		Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Global page background for all JSP pages */
+body {
+	margin: 0;
+	min-height: 100vh;
+	background: url('../images/hotel-bg.jpg') no-repeat center center/cover;
+	color: #fff;
+	position: relative;
+	overflow-x: hidden;
+}
+
+/* Optional: subtle dark overlay so text is readable */
+body::before {
+	content: "";
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.55);
+	backdrop-filter: blur(3px);
+	z-index: -1;
+}
+
+/* Header */
+.header {
+	background: rgba(7, 47, 95, 0.7);
+	color: white;
+	padding: 18px 28px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.header a {
+	color: #fff;
+	text-decoration: none;
+	margin-left: 16px;
+	font-weight: 500;
+	transition: color 0.3s;
+}
+
+.header a:hover {
+	color: #ffcc66;
+}
+
+.nav {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+/* Containers */
+.container {
+	max-width: 1100px;
+	margin: 40px auto;
+	padding: 0 18px;
+}
+
+/* Card Styling */
+.card {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 15px;
+	padding: 28px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(10px);
+	margin-bottom: 28px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card h2, .card h3, .card h4 {
+	color: #fff;
+	margin-top: 0;
+}
+
+.small {
+	font-size: 13px;
+	color: #ddd;
+}
+
+/* Room Grid */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 20px;
+}
+
+.room-card {
+	padding: 20px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.15);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(6px);
+	transition: transform 0.3s ease, background 0.3s ease;
+	text-align: center;
+}
+
+.room-card:hover {
+	transform: translateY(-5px);
+	background: rgba(255, 255, 255, 0.25);
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	padding: 10px 18px;
+	border-radius: 25px;
+	background: #ffcc66;
+	color: #333;
+	font-weight: 600;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+	background: #ffdd88;
+	transform: scale(1.05);
+}
+
+/* Forms */
+.form-row {
+	margin-bottom: 14px;
+}
+
+.input, select {
+	width: 100%;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #d6e4f2;
+	background: rgba(255, 255, 255, 0.9);
+	color: #333;
+}
+
+/* Tables */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table th, .table td {
+	padding: 10px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	text-align: left;
+	color: #fff;
+}
+
+/* Notice & Messages */
+.notice {
+	background: rgba(255, 248, 225, 0.8);
+	border-left: 4px solid #ffd95a;
+	padding: 10px;
+	margin-bottom: 12px;
+	color: #333;
+}
+
+.error {
+	color: #b00020;
+	background: rgba(255, 235, 238, 0.9);
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.success {
+	color: #155724;
+	background: rgba(230, 244, 234, 0.9);
+	padding: 10px;
+	border-radius: 6px;
+}
+
+/* Centered content */
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+/* Footer */
+.footer {
+	padding: 18px;
+	text-align: center;
+	color: #ccc;
+	margin-top: 30px;
+}
+
+/* Subtle fade animations */
+.room-card, .card, .header {
+	animation: fadeIn 0.8s ease forwards;
+	opacity: 0;
+}
+
+@keyframes fadeIn {from { transform:translateY(20px);
+	opacity: 0;
+}
+
+to {
+	transform: translateY(0);
+	opacity: 1;
+}
+}
